@@ -1,0 +1,222 @@
+*{padding: 0;
+margin: 0;}
+/*頁首*/
+header{
+background-color: rgb(2, 30, 44);
+height: 80px;
+width:100%;
+position:fixed;
+}
+h1{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 120px;
+    top:0;
+    line-height: 80px;
+}
+header ul{
+    position: absolute;
+    right: 5vw;
+    top:0;
+    line-height: 80px;
+}
+header li{
+    display: inline;
+    margin-right: 2vw;
+}
+header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+h2{
+    background-color: rgb(1, 66, 98);
+    color: rgb(255, 255, 255);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+/*區塊1*/
+.Introduction{
+    background-color: antiquewhite;
+    color: white;
+    height: 100vh;
+    background-image: url(images/20240512_184950.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.Introduction h3{
+    font-size: 48px;
+}
+.Introduction h4{
+    font-size: 21px;
+    margin: 20px 0;  
+}
+.Introduction img{
+    width: 200px;
+    margin-top: 60px;
+}
+/*區塊2*/
+.Painting{
+    background-color: rgb(187, 209, 232);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.Painting img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 20px 0;
+}
+/*區塊3*/
+.Modeling{
+    background-color: rgb(187, 209, 232);
+    color: rgb(3, 1, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.Modeling img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 20px 0;
+}
+.image-with-text {
+    position: relative;
+    margin: 10px;
+    max-width: 60%; /* 確保圖片不會超出區塊 */
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.image-with-text img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image-with-text p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+/*區塊4*/
+.photo{
+    background-color: rgb(187, 209, 232);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.photo img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 20px 0;
+}
+.other{
+    background-color: rgb(187, 209, 232);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.other img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 20px 0;
+}
+.other video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 20px 0;
+}
+.other p{
+    margin: 35px 0;
+}
+.other a{
+    background-color: rgba(1, 10, 44, 0.808);
+    color: rgb(255, 255, 255);
+    
+    font-size: 30px;
+    text-decoration: none;
+    border: 2px solid #ffffff00;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer{
+    background-color: rgb(2, 30, 44);
+    color: rgb(187, 187, 187);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 760px){
+    header ul{
+        display: none;
+    }
+    header h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .Introduction h3{
+        font-size: 40px;
+    }
+    .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+};
+    
+
